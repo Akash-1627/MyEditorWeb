@@ -22,11 +22,13 @@ check.addEventListener("click", function(){
     let val = document.getElementById('flexSwitchCheckDefault').checked;
     if(val){
         document.getElementById('output').contentWindow.document.body.style.color='black';
+        document.getElementById('output1').contentWindow.document.body.style.color='black';
         document.getElementById('nav').style.backgroundColor = '#fff';
         document.getElementById('navval').style.color = 'black';
         document.getElementById('label').style.color = 'black';
         document.getElementById('label1').style.color = 'black';
         document.getElementById('output').style.backgroundColor = 'lightgrey';
+        document.getElementById('output1').style.backgroundColor = 'lightgrey';
         document.getElementById('titl1').style.color = 'black';
         document.getElementById('titl1').style.border = '2px solid #111';
         document.getElementById('titl2').style.color = 'black';
@@ -49,14 +51,20 @@ check.addEventListener("click", function(){
         document.getElementById('jscode').style.backgroundColor = 'lightgrey';
         document.getElementById('htmlcode').style.color = 'black';
         document.getElementById('bodycol').style.backgroundColor = '#fff';
+        document.getElementById('btn1').style.color = '#111';
+        document.getElementById('btn2').style.color = '#111';
+        document.getElementById('btn1').style.border = '1px solid #111';
+        document.getElementById('btn2').style.border = '1px solid #111';
     }
     if(!val){
         document.getElementById('output').contentWindow.document.body.style.color='white';
+        document.getElementById('output1').contentWindow.document.body.style.color='white';
         document.getElementById('nav').style.backgroundColor = '#222';
         document.getElementById('navval').style.color = '#fff';
         document.getElementById('label').style.color = '#fff';
         document.getElementById('label1').style.color = '#fff';
         document.getElementById('output').style.backgroundColor = '#222';
+        document.getElementById('output1').style.backgroundColor = '#222';
         document.getElementById('titl1').style.color = '#fff';
         document.getElementById('titl1').style.border = 'none';
         document.getElementById('titl2').style.color = '#fff';
@@ -79,9 +87,30 @@ check.addEventListener("click", function(){
         document.getElementById('jscode').style.backgroundColor = '#222';
         document.getElementById('htmlcode').style.color = '#fff';
         document.getElementById('bodycol').style.backgroundColor = '#666';
+        document.getElementById('btn1').style.color = '#fff';
+        document.getElementById('btn2').style.color = '#fff';
+        document.getElementById('btn1').style.border = '1px solid #fff';
+        document.getElementById('btn2').style.border = '1px solid #fff';
     }
+
     
 })
 // if(check.checked){
 //     document.getElementsByClassName('navbar').style.background = '#fff';
 // }
+
+function button1(){
+    let out1 = document.getElementById('output1');
+    let out2 = document.getElementById('output');
+    out1.style.display = 'block';
+    out2.style.display = 'none';
+    
+}
+
+function button2(){
+    let out1 = document.getElementById('output1');
+    let out2 = document.getElementById('output');
+    out2.style.display = 'block';
+    out1.style.display = 'none';
+    
+}

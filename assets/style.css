@@ -16,6 +16,27 @@
 
 }
 
+.buttons{
+    position: fixed;
+    right: 20%;
+    
+}
+.buttons .btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+
+}
+
+.buttons .btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    
+    
+}
+
+
 .editor{
     display: flex;
     margin-top: 5px;
@@ -31,6 +52,16 @@
 
 .editor #output{
     width: 100%;
+    height: 89.3vh;
+    border-radius: 6px;
+    margin-right: 2px;
+    
+    
+}
+
+.editor #output1{
+    display: none;
+    width: 99%;
     height: 89.3vh;
     border-radius: 6px;
     margin-right: 2px;
