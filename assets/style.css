@@ -68,25 +68,10 @@
     border-radius: 3px;
 }
 
-/* .navbar-collapse{
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    
-} */
-
-
 #flexSwitchCheckDefault{
     width: 50px;
     height: 25px;
 }
-
-/* .form-check{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    color: #fff;
-} */
 
 .mode-toggle {
 	display:inline-flex;
@@ -95,10 +80,6 @@
     
 }
 
-/* .collapse{
-    display: inline-flex;
-
-} */
 .label-dark {
 	letter-spacing:-0.15px;
     color: #fff;
