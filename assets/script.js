@@ -3,8 +3,11 @@ function run(){
     let csscode = "<style>"+document.querySelector(".editor #csscode").value+"</style>";
     let jscode = document.querySelector(".editor #jscode").value;
     let output = document.querySelector(".editor #output");
+    let output1 = document.querySelector(".editor #output1");
     output.contentDocument.body.innerHTML = htmlcode+csscode;
+    output1.contentDocument.body.innerHTML = htmlcode+csscode;
     output.contentWindow.eval(jscode);
+    output1.contentWindow.eval(jscode);
 
 }
 document.querySelector(".editor #htmlcode").addEventListener("keyup",run);
@@ -13,6 +16,7 @@ document.querySelector(".editor #jscode").addEventListener("keyup",run);
 
 
 document.getElementById('output').contentWindow.document.body.style.color='white';
+document.getElementById('output1').contentWindow.document.body.style.color='white';
 
 
 
@@ -47,9 +51,9 @@ check.addEventListener("click", function(){
         document.getElementById('htmlcode').style.backgroundColor = 'lightgrey';
         document.getElementById('htmlcode').style.color = 'black';
         document.getElementById('csscode').style.backgroundColor = 'lightgrey';
-        document.getElementById('htmlcode').style.color = 'black';
+        document.getElementById('csscode').style.color = 'black';
         document.getElementById('jscode').style.backgroundColor = 'lightgrey';
-        document.getElementById('htmlcode').style.color = 'black';
+        document.getElementById('jscode').style.color = 'black';
         document.getElementById('bodycol').style.backgroundColor = '#fff';
         document.getElementById('btn1').style.color = '#111';
         document.getElementById('btn2').style.color = '#111';
@@ -83,9 +87,9 @@ check.addEventListener("click", function(){
         document.getElementById('htmlcode').style.backgroundColor = '#222';
         document.getElementById('htmlcode').style.color = '#fff';
         document.getElementById('csscode').style.backgroundColor = '#222';
-        document.getElementById('htmlcode').style.color = '#fff';
+        document.getElementById('csscode').style.color = '#fff';
         document.getElementById('jscode').style.backgroundColor = '#222';
-        document.getElementById('htmlcode').style.color = '#fff';
+        document.getElementById('jscode').style.color = '#fff';
         document.getElementById('bodycol').style.backgroundColor = '#666';
         document.getElementById('btn1').style.color = '#fff';
         document.getElementById('btn2').style.color = '#fff';
